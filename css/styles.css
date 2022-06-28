@@ -21,7 +21,6 @@ color: var(--accent-color);
 letter-spacing: normal;
 }
 
-
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -71,10 +70,21 @@ p {
     margin: 0;
 }
 
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px solid red;
+}
+
+
+
 /* index.html */
 .studio-color {
     color:var(--brand-color);
-}
+    }
 
 .header-logo{
     text-decoration: none;
@@ -86,10 +96,17 @@ p {
 }
 .header-logo {
     list-style: none;
+    margin-right: 93px;
 }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .web-color {
     color: var(--brand-color);
-}
+  }
 .header-list {
     text-decoration: none;
     font-family: 'Roboto';
@@ -103,7 +120,15 @@ p {
 }
 .header-list {
     list-style: none;
+    margin-right: 50px;
+    }
+
+.list {
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
 }
+
 .header-contact {
     text-decoration: none;
     font-family: 'Roboto';
@@ -111,7 +136,13 @@ p {
         font-size: 14px;
         line-height: 1.14;
         color: var(--accent-color);
+        margin-left: auto;
+        margin-left: 50px;
+        
 }
+
+
+
 .header-list:hover,
 .header-list:focus{
     color: var(--brand-color);
@@ -122,6 +153,9 @@ p {
 }
 .hero{
     background-color: var(--background-color);
+    padding: 200px;
+    margin-bottom: 94px;
+
 }
 .section-hero{
         font-family: 'Roboto';
@@ -131,6 +165,7 @@ p {
         text-align: center;
         text-transform: uppercase;
         color: var(--text-background);
+        
        
 }
 .btn-hero{
@@ -142,7 +177,25 @@ p {
         background-color: var(--brand-color);
         cursor: pointer;
         border: none;
+        margin: 0 auto;
+         display: block;
+         border-radius: 3px;
+        }
+        .to-hide {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    margin: -1px;
+                    padding: 0;
+                    overflow: hidden;
+                    border: 0;
+                    clip: rect(0 0 0 0);
+        }
+        
+.our-mission {
+    margin-bottom:116px;
 }
+
 .mission{
     font-family: 'Roboto';
         font-weight: 700;
@@ -151,6 +204,11 @@ p {
         text-align: center;
         color: var(--header-color);
 }
+.mission-list {
+    flex-basis: 50%;
+    margin-right: 30px;
+}
+
 .mission-heading{
     font-family: 'Roboto';
         font-weight: 700;
@@ -168,8 +226,11 @@ p {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--accent-color);
- 
+ }
+.section-about {
+    padding: 94px;
 }
+
 .about-heading{
     font-family: 'Roboto';
         font-weight: 700;
@@ -177,7 +238,12 @@ p {
         line-height:1.16;
         text-align: center;
         color: var(--header-color);
+        margin-bottom: 48px;
 }
+.section-team {
+    padding: 94px;
+}
+
 .section-team-heading{
     font-family: 'Roboto';
         font-weight: 700;
@@ -263,6 +329,7 @@ font-family: 'Roboto';
   .button{
     list-style: none;
     color: var(--header-color);
+    display: flex;
     
   }
   .button{
@@ -275,7 +342,11 @@ font-family: 'Roboto';
         letter-spacing: 0.03em;
         color: var(--header-color);
         cursor: pointer;
+        margin-bottom: 50px;
+        justify-content: space-evenly;
+        margin-right: 8px;
   }
+
 .button-filters {
     font-family: inherit;
     border: none;
@@ -296,7 +367,11 @@ font-family: 'Roboto';
 
   .project{
     list-style: none;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     }
+
   .project-heading{
     font-family: 'Roboto';
         font-weight: 700;
@@ -305,12 +380,16 @@ font-family: 'Roboto';
         color: var(--header-color);
         letter-spacing: 0.06em;
   }
+  .img-project {
+    margin-bottom: 30px;
+  }
   .title-project{
     font-family: 'Roboto';
         font-size: 16px;
         line-height: 1.88;
         color: var(--accent-color);
         letter-spacing: 0.03em;
+        margin-right: 30px;
   }
   
 
